@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />        
+    </head>
+<body>
+    <div id="app">
+        <img :src="image" :class="gender" :alt="`${firstName} ${lastName}`" />
+        <h1>Hello {{firstName}} {{lastName}}</h1>
+        <h3>Email: {{emailId}}</h3>
+        <button v-on:click="getUser()" :class="gender">Get Random User</button>
+    </div>
+
+    <script src="vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
